@@ -1,0 +1,222 @@
+/* HALAMAN KESELURUHAN */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: sans-serif,sans-serif;
+    margin: 0;
+    background-color: #040e0e;
+}
+a {  /* TEXT NAVBAR */
+    max-width: 1200px;
+    text-decoration: none;
+    color: #ffffff; /* Light link color */
+    font-weight: bold;
+    margin-right: 40px;
+    padding-right:60px ;
+}
+a:hover{
+    color: #8da988;
+}
+
+
+.container2 {  /* TEXT BERGABUNGLAH BERSAMA KOMUNITAS KAMI */
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #000000;
+}
+
+/* Desain Header (Navbar) */
+header {
+    background-color: #081B1C; 
+    padding: 0 20px;
+
+}
+
+/* Posisi Header (Navbar) */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* Desain logo Header (Navbar) */
+header .logo img {
+    height: 70px;
+    align-items: end;
+    margin-left: 30px;
+    padding-left: 60px;
+}
+/* Desain list (home singup dan login) */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Spasi text navbar (home signup dan login */
+header nav li {
+    margin-left: 30px;
+    padding-right: 0px;
+
+}
+
+/* HEAD BAR */
+.hero {
+    display: flex; /* Mengaktifkan flexbox */
+    align-items: center; /* Pusatkan elemen secara horizontal */
+    justify-content: center; /* Pusatkan elemen secara vertikal */
+    min-height: 200px; /* Mengatur tinggi minimal agar memenuhi layar */
+    background-image: url("background_gunung.png"); /* Dari gambar */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    text-align: center; /* Pusatkan teks */
+    font-size: 60px;
+    color: #ffffff; /* Warna teks putih */
+    opacity: 0.7; /* Opasitas teks */
+}
+.main-content {
+    padding: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #2b5e5c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+    display: flex;                /* Menggunakan flexbox untuk pengaturan layout */
+    flex-direction: column;      /* Menyusun elemen secara vertikal */
+    align-items: center;         /* Memusatkan elemen secara horizontal */
+    justify-content: center;      /* Memusatkan elemen secara vertikal */
+    text-align: center;
+}
+
+.card h3 {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    margin: 5px 0;
+}
+
+.level {
+    background-color: #f7c08a;
+    color: #780303;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.time {
+    font-style: italic;
+}
+
+.button {
+    max-width: 100px;
+    margin: auto;
+    padding: 20px;
+    background: #081B1C;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Mengatur posisi elemen */
+    bottom: 2px; /* Atur jarak dari atas */
+    left: 5px; /* Atur jarak dari kiri */
+    display: inline-block;
+}
+
+
+.card button:hover {
+    background-color: #5fb2af;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #071819;
+    min-height: 100px;
+    padding: 20px 0;
+}
+
+footer h3 {
+    color: #ffffff; /* set "Get in touch" text color to white */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* add some margin below the text */
+    font-size: 1.5em;
+}
+
+footer p{
+    color: #ffffff; /* set "Get in touch" text color to white */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* add some margin below the text */
+    color: #ffffff;
+}
+footer .footericon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+footer .footericon li{
+    list-style: none;
+
+}
+footer .footericon li a {
+    font-size: 2em;
+    margin: 0 -10px; /* Mengurangi jarak antar ikon menjadi 5px */
+    display: inline-block;
+    transition: transform 0.5s; /* Memperbaiki properti transform */
+}
+
+

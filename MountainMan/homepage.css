@@ -1,0 +1,256 @@
+/* HALAMAN KESELURUHAN */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    font-family: sans-serif,sans-serif;
+    margin: 0;
+    background-color: #174042;
+}
+
+a {  /* TEXT NAVBAR */
+    max-width: 1200px;
+    text-decoration: none;
+    color: #ffffff; /* Light link color */
+    font-weight: bold;
+    margin-right: 40px;
+    padding-right:60px ;
+}
+a:hover{
+    color: #8da988;
+}
+
+
+.container2 {  /* TEXT BERGABUNGLAH BERSAMA KOMUNITAS KAMI */
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #000000;
+}
+
+/* Desain Header (Navbar) */
+header {
+    background-color: #081B1C; 
+    padding: 0 20px;
+
+}
+
+/* Posisi Header (Navbar) */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* Desain logo Header (Navbar) */
+header .logo img {
+    height: 70px;
+    align-items: end;
+    margin-left: 30px;
+    padding-left: 60px;
+}
+/* Desain list (home singup dan login) */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Spasi text navbar (home signup dan login */
+header nav li {
+    margin-left: 30px;
+    padding-right: 0px;
+
+}
+
+/* Hero Section Styles */
+
+/* Desain banner */
+.hero {
+    background-image: url("background_gunung.png"); /* Dari gambar */
+    background-size: cover;
+    background-position: center;
+    min-height: 614px;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Desain text banner */
+.hero h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 45%;
+    left: 55%;
+    text-align: left;
+    font-size: 60px;
+    margin-bottom: 0;
+    color: #ffffff; /* White text on hero image */
+    opacity: 0.5;
+}
+
+/* Style Pengenalan*/
+.features {
+    padding: 30px 0px;
+    text-align: center;
+}
+/*teks bergabunglah bersama komintas kami*/
+.features h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: #fefefe;
+   
+}
+.features h3 {
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: #081B1C;
+   
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.feature {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #9cbba0; /* Dark grey background for features */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.feature:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+}
+
+.feature img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Call to Action Styles */  
+.call-to-action {
+    background-image: url("foto_footer.png"); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    
+}
+
+
+.call-to-action h2 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 5em;
+    margin-bottom: 50px;
+    color: #ffffff; /* White text on CTA image */
+    opacity: 0.6;
+}
+
+
+/*Button*/
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #205a3c;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.btn:hover{
+    background-color: #56b182;
+    color: #081B1C;
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #071819;
+    min-height: 100px;
+    padding: 20px 0;
+}
+
+footer h3 {
+    color: #ffffff; /* set "Get in touch" text color to white */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* add some margin below the text */
+    font-size: 1.5em;
+}
+
+footer p{
+    color: #ffffff; /* set "Get in touch" text color to white */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* add some margin below the text */
+    color: #ffffff;
+}
+footer .footericon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+footer .footericon li{
+    list-style: none;
+
+}
+footer .footericon li a {
+    font-size: 2em;
+    margin: 0 -10px; /* Mengurangi jarak antar ikon menjadi 5px */
+    display: inline-block;
+    transition: transform 0.5s; /* Memperbaiki properti transform */
+}
+
+
+.dashboard-info {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.info-box {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+}
+
+.info-box i {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.info-box h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #555555;
+}

@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: sans-serif,sans-serif;
+    margin: 0;
+    background-color: #040e0e;
+    width: 100%;  /* Mengisi 100% lebar kontainer */
+    height: auto; /* Menjaga proporsi gambar */
+}
+a {  
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 40px;
+    padding-right: 60px;
+}
+
+a:hover {
+    color: #8da988;
+}
+
+.container2 {  
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #000000;
+}
+
+header {
+    background-color: #081B1C;
+    padding: 0 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 70px;
+    align-items: end;
+    margin-left: 30px;
+    padding-left: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav li {
+    margin-left: 30px;
+    padding-right: 0;
+}
+
+
+main {
+   background-color: #ffffff;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #333;
+}
+
+/* Gaya untuk judul */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding-left: 15px; /* Padding kiri untuk judul */
+    padding-right: 15px; /* Padding kanan untuk judul */
+}
+
+/* Gaya untuk gambar */
+.mountain-image {
+    display: block;
+    margin: 20px auto; /* Memberi jarak atas-bawah pada gambar dan memastikan gambar tetap di tengah */
+    width: 90%; /* Mengurangi lebar gambar agar ada ruang kosong di sisi kiri dan kanan */
+    height: 300px; /* Tinggi gambar tetap atau disesuaikan */
+    background-size: cover; /* Menutupi seluruh area */
+    background-position: center; /* Posisi gambar di tengah */
+    border-radius: 8px; /* Memberikan sudut melengkung pada gambar */
+    padding: 20px; /* Memberi jarak di dalam gambar (padding) */
+    box-sizing: border-box; /* Agar padding tidak mempengaruhi lebar gambar */
+    margin-left: auto; /* Memastikan gambar berada di tengah */
+    margin-right: auto; /* Memastikan gambar berada di tengah */
+}
+/* Gaya untuk teks deskripsi */
+p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding-left: 15px; /* Padding kiri untuk teks deskripsi */
+    padding-right: 15px; /* Padding kanan untuk teks deskripsi */
+}
+
+/* Gaya untuk informasi cuaca */
+.weather-info {
+    background-color: #081B1C;
+    display: block;
+    margin: 20px auto; /* Memberi jarak atas-bawah pada gambar dan memastikan gambar tetap di tengah */
+    width: 90%; /* Mengurangi lebar gambar agar ada ruang kosong di sisi kiri dan kanan */
+    height: 300px; /* Tinggi gambar tetap atau disesuaikan */
+    background-size: cover; /* Menutupi seluruh area */
+    background-position: center; /* Posisi gambar di tengah */
+    border-radius: 8px; /* Memberikan sudut melengkung pada gambar */
+    padding: 20px; /* Memberi jarak di dalam gambar (padding) */
+    box-sizing: border-box; /* Agar padding tidak mempengaruhi lebar gambar */
+    margin-left: auto; /* Memastikan gambar berada di tengah */
+    margin-right: auto; /* Memastikan gambar berada di tengah */
+}
+
+/* Gaya untuk cuaca dan detailnya */
+.weather-info h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Gaya untuk ikon cuaca */
+.weather-info img.weather-icon {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px;
+    height: 60px;
+}
+
+/* Gaya untuk teks cuaca */
+.weather-info p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+/* Gaya untuk iframe peta */
+.peta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.peta_frame {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada iframe */
+    width: 100%;
+    max-width: 600px; /* Membatasi lebar peta agar tidak terlalu lebar */
+    height: 450px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .weather-info {
+        padding: 15px;
+    }
+
+    .peta_frame {
+        max-width: 100%;
+        height: 350px;
+    }
+}
+footer{
+    position: relative;
+    width: 100%;
+    background: #071819;
+    min-height: 100px;
+    padding: 20px 0;
+}
+
+footer h3 {
+    color: #ffffff; /* set "Get in touch" text color to white */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* add some margin below the text */
+    font-size: 1.5em;
+}
+
+footer p{
+    color: #ffffff; /* set "Get in touch" text color to white */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* add some margin below the text */
+    color: #ffffff;
+}
+footer .footericon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+footer .footericon li{
+    list-style: none;
+
+}
+footer .footericon li a {
+    font-size: 2em;
+    margin: 0 -10px; /* Mengurangi jarak antar ikon menjadi 5px */
+    display: inline-block;
+    transition: transform 0.5s; /* Memperbaiki properti transform */
+}
+
+/* Gaya untuk bagian komentar */
+.comments-section {
+    margin-top: 30px;
+}
+
+.comments-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.comments-section form {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.rating {
+    margin-bottom: 15px;
+}
+
+.rating select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.comment-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-item p {
+    margin: 5px 0;
+}
+
+.comment-item small {
+    font-size: 0.85rem;
+    color: #666;
+}
+
